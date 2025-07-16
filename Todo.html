@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Todo List </title>
+    <style>
+      #formdiv,
+      #editformdiv {
+        height: 400px;
+        margin-top: 100px;
+        width: 320px;
+        background-color: rgb(243, 239, 239);
+        border-radius: 10px;
+        display: none;
+        border: none;
+        position: fixed;
+        left: 50%;
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      #inputbox,
+      #inputdisc {
+        height: 30px;
+        width: 180px;
+        margin: 15px 5px 5px 19px;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+      }
+
+      #addtaskbtn:hover,
+      #formopenbtn:hover {
+        background-color: rgba(68, 68, 245, 0.86);
+      }
+
+      #editForm button,
+      #addtaskbtn {
+        background-color: blue;
+        height: 35px;
+        width: 100px;
+        border: none;
+        margin: 35px 0px 0px 65px;
+        font-weight: 700;
+        color: white;
+        border-radius: 8px;
+      }
+      #span2 {
+        justify-content: space-around;
+        display: flex;
+        width: 95px;
+        height: 85px;
+        align-items: center;
+      }
+
+      #checkbox,
+      #deletebtn {
+        cursor: pointer;
+        height: 17px;
+        width: 17px;
+        font-size: x-large;
+        text-align: center;
+      }
+      img {
+        height: 17px;
+        width: 17px;
+        cursor: pointer;
+      }
+      #span2 #deletebtn {
+        padding-bottom: 14px;
+      }
+
+      #maindiv {
+        background-color: rgb(243, 239, 239);
+        border: 2px solid black;
+        width: 30%;
+        height: 500px;
+        margin-left: 20%;
+        margin-top: 5%;
+        border-radius: 15px;
+        padding: 0px;
+        border: none;
+        box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      #taskdiv {
+        height: 325px;
+        margin-top: 90px;
+        margin: 80px 2px 25px 0px;
+        padding-left: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #888 #f1f1f1;
+        overflow: auto;
+      }
+
+      #addbtn,
+      #formopenbtn {
+        height: 40px;
+        width: 115px;
+        cursor: pointer;
+        margin: 25px 5px 5px 158px;
+        color: white;
+        font-weight: 700;
+        border: none;
+        font-size: large;
+        border-radius: 8px;
+        background-color: blue;
+      }
+      li {
+        background-color: rgb(227, 221, 221);
+        height: 115px;
+        width: 300px;
+        margin: 05px 0px 0px 10px;
+        padding: 0px 2px 0px 10px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        border-radius: 5px;
+      }
+      #desc {
+        width: 210px;
+        height: 55px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+      }
+
+      #listdiv {
+        width: 250px;
+        height: 100px;
+      }
+      #span1 {
+        overflow: auto;
+        font-weight: bolder;
+        display: inline-block;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        height: 35px;
+        width: 210px;
+        font-size: large;
+        border-bottom: 2px solid gray;
+        scrollbar-width: thin; /* auto | thin | none */
+        scrollbar-color: #888 #f1f1f1;
+      }
+      /*css display properties read*/
+    </style>
+  </head>
+  <body></body>
+  <script src="Todo.js"></script>
+</html>
